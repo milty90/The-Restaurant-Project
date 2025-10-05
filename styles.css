@@ -11,6 +11,7 @@ body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   --hero-background: url("./images/hero_background.jpg");
+  --menu-background: url("./images/baking-concept-with-ingredients-dark.jpg");
   --opening-hours-background: url("./images/contemporary-black-brick-pub-bar-interior-generative-ai.jpg");
   --color: #ffffff;
   --primary-color: #bf0426;
@@ -245,6 +246,10 @@ body {
   object-fit: cover;
   display: block;
 }
+#menu {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    var(--opening-hours-background) no-repeat center center/cover;
+}
 .menu {
   height: auto;
   display: flex;
@@ -255,8 +260,7 @@ body {
   align-items: center;
   text-align: left;
   padding: 1.5rem;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    var(--opening-hours-background) no-repeat center center/cover; */
+  background: transparent;
 }
 .menu-items {
   display: flex;
@@ -298,7 +302,7 @@ body {
   font-weight: 300;
   color: var(--color);
   border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .menu-item-txt {
   display: flex;
@@ -353,6 +357,49 @@ body {
   font-weight: 600;
   color: var(--hero-title-shadow);
 }
+#contact {
+  background-color: #222222;
+}
+.contact .container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  padding: 1.5rem;
+}
+.contact-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  justify-content: left;
+  align-items: flex-start;
+  color: var(--secondary-color);
+  max-width: 100%;
+}
+.contact-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.contact-email {
+  margin: 0;
+}
+
 footer {
   background-color: var(--nav-item-hover-shadow);
   color: var(--secondary-color);
@@ -360,15 +407,15 @@ footer {
   text-align: center;
   gap: 1rem;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 footer .links {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .link {
@@ -450,6 +497,10 @@ footer .links {
     min-width: 50%;
     height: auto;
   }
+  .heading {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
   .about-subtitle {
     font-size: 1rem;
     line-height: 1.2rem;
@@ -460,7 +511,7 @@ footer .links {
     color: var(--color);
   }
   .menu-items {
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     height: 100%;
@@ -520,6 +571,17 @@ footer .links {
   }
   .about-btn {
     margin-top: 1.5rem;
+  }
+  .menu {
+    padding: 2rem 1rem;
+  }
+  .menu-items {
+    max-width: 1300px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
   }
   .opening-hours {
     height: 65vh;
