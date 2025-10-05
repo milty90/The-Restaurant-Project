@@ -14,6 +14,7 @@ body {
   --menu-background: url("./images/baking-concept-with-ingredients-dark.jpg");
   --opening-hours-background: url("./images/contemporary-black-brick-pub-bar-interior-generative-ai.jpg");
   --color: #ffffff;
+  --background-color: #222222;
   --primary-color: #bf0426;
   --secondary-color: #dedede;
   --hero-title-shadow: #dfdfdf;
@@ -172,7 +173,7 @@ body {
 .about {
   height: auto;
   display: flex;
-  background-color: #222222;
+  background-color: var(--background-color);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -248,7 +249,7 @@ body {
 }
 #menu {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    var(--opening-hours-background) no-repeat center center/cover;
+    var(--menu-background) no-repeat center center/cover;
 }
 .menu {
   height: auto;
@@ -280,7 +281,7 @@ body {
   position: relative;
   top: 0.7rem;
   z-index: 10;
-  background-color: #222222;
+  background-color: #000000f2;
   padding: 0 0.5rem;
   font-size: 1.2rem;
   line-height: 1.2rem;
@@ -360,41 +361,40 @@ body {
 #contact {
   background-color: #222222;
 }
-.contact .container {
-  height: auto;
+.contact {
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: center;
+  justify-content: center;
+  align-items: left;
   text-align: left;
   padding: 1.5rem;
 }
 .contact-left {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
   height: auto;
-  max-height: 400px;
-  overflow: hidden;
-  margin-bottom: 2rem;
 }
 .contact-right {
   display: flex;
   flex-direction: column;
-  line-height: 2rem;
-  justify-content: left;
+  justify-content: center;
   align-items: flex-start;
+  width: 50%;
+  height: 100%;
   color: var(--secondary-color);
-  max-width: 100%;
 }
 .contact-img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
+  object-fit: cover;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.contact-telefon {
+  padding: auto;
+  width: 160px;
 }
 .contact-email {
   margin: 0;
@@ -519,6 +519,22 @@ footer .links {
   .opening-hours {
     height: 55vh;
   }
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 3rem;
+  }
+  .contact-right {
+    line-height: 1.8rem;
+    padding-left: 1rem;
+  }
+  .contact-left {
+    padding-left: 2rem;
+    justify-content: space-between;
+  }
   footer .links {
     flex-direction: row;
     gap: 3rem;
@@ -572,6 +588,10 @@ footer .links {
   .about-btn {
     margin-top: 1.5rem;
   }
+  #menu {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      var(--menu-background) no-repeat center center / cover;
+  }
   .menu {
     padding: 2rem 1rem;
   }
@@ -586,7 +606,14 @@ footer .links {
   .opening-hours {
     height: 65vh;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      var(--opening-hours-background) no-repeat center calc(35% - 1rem) / cover;
+      var(--opening-hours-background) no-repeat center calc(90% - 1rem) / cover;
+  }
+  .contact-right {
+    padding-left: 4rem;
+  }
+  .contact-left {
+    padding-left: 3rem;
+    justify-content: space-between;
   }
 }
 @media only screen and (min-width: 1400px) {
