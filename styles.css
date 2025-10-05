@@ -616,6 +616,10 @@ footer .links {
     padding-left: 3rem;
     justify-content: space-between;
   }
+  footer {
+    padding: 0;
+    font-size: 1rem;
+  }
 }
 @media only screen and (min-width: 1400px) {
   .container {
