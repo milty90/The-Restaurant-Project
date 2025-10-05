@@ -367,7 +367,7 @@ body {
   justify-content: center;
   align-items: left;
   text-align: left;
-  padding: 1.5rem;
+  padding: 3rem 3rem;
 }
 .contact-left {
   display: flex;
@@ -382,6 +382,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  line-height: 1.8rem;
   width: 50%;
   height: 100%;
   color: var(--secondary-color);
@@ -606,7 +607,7 @@ footer .links {
   .opening-hours {
     height: 65vh;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      var(--opening-hours-background) no-repeat center calc(90% - 1rem) / cover;
+      var(--opening-hours-background) no-repeat center center/ cover;
   }
   .contact-right {
     padding-left: 4rem;
