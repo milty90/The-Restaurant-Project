@@ -199,7 +199,7 @@ body {
   font-size: 1.8rem;
   line-height: 1.8rem;
   font-family: "Inter", sans-serif;
-  border-bottom: var(--hero-title-shadow) 2px dotted;
+  border-bottom: var(--hero-title-shadow) 4px dotted;
   width: fit-content;
   letter-spacing: 0.1em;
   font-weight: 700;
