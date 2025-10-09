@@ -393,12 +393,24 @@ body {
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.contact-action {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
 .contact-telefon {
   padding: auto;
   width: 160px;
 }
+.contact-telefon {
+  margin-top: 1rem;
+  width: fit-content;
+  min-width: max-content;
+}
 .contact-email {
-  margin: 0;
+  margin-top: 0;
+  width: fit-content;
+  min-width: max-content;
 }
 
 footer {
@@ -481,7 +493,7 @@ footer .links {
     padding: 1em 2em;
   }
   .about {
-    height: 55vh;
+    height: 60vh;
     flex-direction: row;
     text-align: left;
     margin-bottom: 0;
@@ -518,7 +530,7 @@ footer .links {
     height: 100%;
   }
   .opening-hours {
-    height: 55vh;
+    height: 60vh;
   }
   .contact {
     display: flex;
@@ -526,16 +538,30 @@ footer .links {
     justify-content: center;
     align-items: center;
     text-align: left;
-    gap: 3rem;
+    gap: 2rem;
   }
   .contact-right {
+    width: 55%;
     line-height: 1.8rem;
     padding-left: 1rem;
   }
+  .contact-action {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
   .contact-left {
-    padding-left: 2rem;
+    width: 45%;
+    padding-left: 0rem;
     justify-content: space-between;
   }
+  .contact-telefon {
+    margin-top: 1rem;
+  }
+  .contact-email {
+    margin-top: 1rem;
+  }
+
   footer .links {
     flex-direction: row;
     gap: 3rem;
