@@ -11,8 +11,8 @@ body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   --hero-background: url("./images/hero_background.jpg");
-  --menu-background: url("./images/baking-concept-with-ingredients-dark.jpg");
-  --opening-hours-background: url("./images/contemporary-black-brick-pub-bar-interior-generative-ai.jpg");
+  --menu-background: url("./images/baking-concept.jpg");
+  --opening-hours-background: url("./images/contemporary.jpg");
   --color: #ffffff;
   --background-color: #222222;
   --primary-color: #bf0426;
@@ -294,6 +294,7 @@ body {
   display: flex;
   flex-direction: column;
   border: var(--primary-color) 2px solid;
+  height: inherit;
   min-width: 90%;
   padding: 1.5rem;
   padding-top: 2.5rem;
@@ -629,6 +630,10 @@ footer .links {
     justify-content: center;
     align-items: flex-start;
     height: 100%;
+  }
+  .menu-item-content {
+    min-height: 370px;
+    max-height: 400px;
   }
   .opening-hours {
     height: 65vh;
